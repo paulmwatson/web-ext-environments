@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "web-ext-environments",
+  "version": "0.1",
+  "description": "Example of multiple environments while using web-ext for browser extension development.",
+  "permissions": [
+    "tabs",
+    "process.env.API_BASE_URL*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}

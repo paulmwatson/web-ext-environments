@@ -1,0 +1,6 @@
+dist
+.env.development
+.env.production
+node_modules
+web-ext-artifacts
+.vscode

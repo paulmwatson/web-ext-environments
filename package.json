@@ -1,0 +1,22 @@
+{
+  "name": "web-ext-environments",
+  "version": "1.0.0",
+  "description": "Example of multiple environments while using web-ext for browser extension development.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"webpack --watch -c webpack.development.js\" \"web-ext run --source-dir dist --verbose\"",
+    "build": "webpack --config webpack.production.js"
+  },
+  "author": "Paul Watson",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "dotenv-webpack": "^1.7.0",
+    "web-ext": "^4.0.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^4.0.0-beta.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {}
+}
